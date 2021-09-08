@@ -33,7 +33,7 @@ void MyRents::loadMyRentsPage() {
 
     if(myLst->size() == 0){
         QLabel* emptyListLabel = new QLabel("Oops, you still haven't rented any vehicle...");
-        emptyListLabel->setGeometry(100, 160*row + 100, 1700, 150);
+        emptyListLabel->setGeometry(100, 160*row + 100, 1700, 125);
         emptyListLabel->setStyleSheet("QLabel {color: white;"
                                "font-size: 20px;"
                              "border: 2px solid black;"
@@ -151,7 +151,7 @@ void MyRents::loadMyRentsPage() {
                                    "background-color: rgba(150, 150, 150, 50);}");
             addWidget(delBtn);
 
-            connect(delBtn, &QPushButton::clicked, this, [=]{emit myLst->erase(index); MyRents::openHome();});
+            connect(delBtn, &QPushButton::clicked, this, [=]{emit myLst->erase(index); MyRents::restorePage();});
 
             row++;
             index++;

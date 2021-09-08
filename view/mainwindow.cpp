@@ -5,7 +5,6 @@
 #include "controller/homecontroller.h"
 #include "controller/productcontroller.h"
 #include "controller/myrentscontroller.h"
-#include "controller/editcontroller.h"
 
 #include <QGraphicsScene>
 
@@ -35,9 +34,6 @@ void MainWindow::setScreen(Routes r){
     break;
     case Routes::MyRentsScreen:
         controller = new MyRentsController;
-    break;
-    case Routes::EditScreen:
-        controller = new EditController;
     break;
 
     }

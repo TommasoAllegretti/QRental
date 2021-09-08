@@ -26,12 +26,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         view/mainwindow.cpp \
-    model/deepptr.cpp \
     model/offroadvehicle.cpp \
     model/rentalobject.cpp \
     model/roadvehicle.cpp \
     model/showroomvehicle.cpp \
-    model/container.cpp \
     model/ormotorcycle.cpp \
     model/rmotorcycle.cpp \
     model/car.cpp \
@@ -44,9 +42,7 @@ SOURCES += \
     controller/productcontroller.cpp \
     view/product.cpp \
     controller/myrentscontroller.cpp \
-    controller/editcontroller.cpp \
     view/myrents.cpp \
-    view/edit.cpp \
     globals/globals.cpp
 
 HEADERS += \
@@ -70,7 +66,5 @@ HEADERS += \
     controller/productcontroller.h \
     view/product.h \
     controller/myrentscontroller.h \
-    controller/editcontroller.h \
     view/myrents.h \
-    view/edit.h \
     globals/globals.h
